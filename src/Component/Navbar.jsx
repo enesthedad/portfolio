@@ -1,65 +1,141 @@
-import React from "react";
+import React, { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import twitterIcon from "../Imgs/twitter.png";
 import githubIcon from "../Imgs/github-svgrepo-com.svg";
 import devIcon from "../Imgs/dev-to-svgrepo-com.svg";
 import mediumIcon from "../Imgs/medium-svgrepo-com.svg";
-const Navbar = () => {
+import MobileNav from "./MobileNav";
+const Navbar = ({ handleClick, navOpen }) => {
   return (
-    <div className="relative w-full " id="home">
-      <div className="absolute top-0 flex items-center w-full px-6 py-6 bg-transparent shadow-lg backdrop-blur-md ">
-        <div className="logo w-1/3 text-[36px] text-stone-700  font-bold justify-center flex">
+    <div className="relative z-40 w-full " id="home">
+      <div
+        className={
+          navOpen
+            ? `fixed top-0 z-40 flex justify-between w-full px-10 py-6 bg-stone-900 `
+            : `absolute top-0 z-40 flex justify-between w-full px-10 py-6 bg-stone-900 `
+        }
+      >
+        <div className="logo w-1/3 text-[20px] md:text-[24px] text-white  font-bold justify-center flex">
           <a href="#">
             <div className="relative">
-              e<span className="text-[#3B2AD4]">.</span>soyturk
-              <p className="absolute right-0 bottom-[-10px] text-[14px]">
-                엔<span className="text-red-500 ">에</span>스
+              e<span className="text-red-500">.</span>soyturk
+              <p className="absolute right-0 bottom-[-16px] text-[14px]">
+                엔<span className="text-emerald-500 ">에</span>스
               </p>
             </div>
           </a>
         </div>
-        <div className="social-links w-1/3 text-[30px]  flex gap-5 justify-center text-stone-600 ">
+        {/* FOR SMALL SCREENS */}
+        <div className="text-white lg:hidden  text-[24px]">
+          <a href="" onClick={handleClick}>
+            {navOpen ? (
+              <i class="fa-solid fa-x"></i>
+            ) : (
+              <i class="fa-solid fa-bars"></i>
+            )}
+          </a>
+        </div>
+        <div className="hidden lg:social-links lg:w-1/3 lg:text-[28px]  lg:flex lg:gap-3 lg:justify-center text-zinc-300 ">
           <a
             href="https://github.com/enesthedad"
             className="divide-x-2"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="hover:text-[#3B2AD4] fa-brands fa-github"></i>
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-github   transition-all ease-in-out"></i>
           </a>
           <a
             href="https://twitter.com/enesthedad"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="hover:text-[#3B2AD4] fa-brands fa-square-x-twitter"></i>
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-square-x-twitter  transition-all ease-in-out"></i>
           </a>
           <a
             href="https://medium.com/@robinthelevi"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="hover:text-[#3B2AD4] fa-brands fa-medium"></i>
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-medium   transition-all ease-in-out"></i>
           </a>
           <a href="https://dev.to/enesthedad" target="_blank" rel="noreferrer">
-            <i class="hover:text-[#3B2AD4] fa-brands fa-dev"></i>
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-dev   transition-all ease-in-out"></i>
           </a>
         </div>
-        <div className="flex items-center justify-center w-1/3 gap-3 font-semibold navigation text-stone-400">
-          <a href="#" className="text-white">
-            Home
-          </a>
+        <div className="items-center justify-center hidden w-1/3 gap-3 font-semibold lg:flex navigation text-stone-600">
+          <AnchorLink href="#home" className="text-white ">
+            <button>Home</button>
+          </AnchorLink>
           <AnchorLink href="#about">
             <button>About Me</button>
           </AnchorLink>
           <AnchorLink href="#projects">
             <button>Projects</button>
           </AnchorLink>
-          <a href="#" className=" bg-[#3B2AD4] px-2 py-1 rounded-md text-white">
-            Connect Me
+          <AnchorLink
+            href="#connect"
+            className="px-2 py-1 text-white transition-all ease-in-out rounded-md bg-emerald-500 hover:bg-white hover:text-emerald-500"
+          >
+            <button>Connect Me</button>
+          </AnchorLink>
+        </div>
+      </div>
+      <div
+        className={
+          navOpen
+            ? `fixed top-0 z-0 pt-40 pl-12 right-0 h-screen duration-300 w-1/2 transition-all ease-in-out  bg-black`
+            : `translate-x-[-100%] opacity-0 h-0  duration-300 transition-all ease-in-out`
+        }
+      >
+        <div className=" flex flex-col gap-3 text-[18px] font-semibold text-white upper-links">
+          <AnchorLink href="#about" onClick={handleClick}>
+            <button className="hover:text-emerald-400">Home</button>
+          </AnchorLink>
+          <AnchorLink onClick={handleClick} href="#about">
+            <button className="hover:text-emerald-400">About me</button>
+          </AnchorLink>
+          <AnchorLink onClick={handleClick} href="#projects">
+            <button className="hover:text-emerald-400">Projects</button>
+          </AnchorLink>
+          <AnchorLink onClick={handleClick} href="#connect">
+            <button className="hover:text-emerald-400">Connect with me</button>
+          </AnchorLink>
+        </div>
+        <div className="down-links text-[20px] text-stone-300 flex gap-3">
+          <a
+            href="https://github.com/enesthedad"
+            className="divide-x-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-github   transition-all ease-in-out"></i>
+          </a>
+          <a
+            href="https://twitter.com/enesthedad"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-square-x-twitter  transition-all ease-in-out"></i>
+          </a>
+          <a
+            href="https://medium.com/@robinthelevi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-medium   transition-all ease-in-out"></i>
+          </a>
+          <a href="https://dev.to/enesthedad" target="_blank" rel="noreferrer">
+            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-dev   transition-all ease-in-out"></i>
           </a>
         </div>
       </div>
+      <div
+        className={
+          navOpen
+            ? `fixed top-0 z-0 left-0 h-screen duration-300 w-1/2 transition-all ease-in-out  bg-black opacity-50`
+            : `translate-x-[-100%] opacity-0  duration-300 transition-all ease-in-out`
+        }
+      ></div>
     </div>
   );
 };
