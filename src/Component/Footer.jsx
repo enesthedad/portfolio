@@ -1,20 +1,12 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import okIcon from "../Imgs/okAvatar.png";
+import Logo from "./Logo";
 const Footer = () => {
   return (
     <div className="w-full bg-stone-900 flex md:flex-row flex-col min-h-[300px]">
-      <div className="flex flex-col content-between justify-between gap-3 p-10 text-[#F5F1E6] md:w-1/2 left">
-        <h3 className="text-[24px] flex gap-2 font-bold items-center justify-start">
-          <img src={okIcon} className="h-16" alt="" />
-          <a href="#">
-            <div className="relative">
-              e<span className="text-[#FE7D91]">.</span>soyturk
-              <p className="absolute right-0 bottom-[-16px] text-[14px]">
-                엔<span className="text-[#B1DCC9]">에</span>스
-              </p>
-            </div>
-          </a>
+      <div className="flex flex-col content-between justify-between gap-3 lg:p-10 p-4 text-[#F5F1E6] md:w-1/2 left">
+        <h3 className="text-[24px] flex  font-bold items-center justify-start">
+          <Logo type="footer" />
         </h3>
         <p className="py-4 text-stone-400">
           I’m a Full-Stack Developer who loves working with React.js, Node.js,
@@ -62,8 +54,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-2 p-10 font-bold text-white md:flex-row right">
-        <div className="flex flex-col gap-2 p-6 lg:w-1/3 ">
+      <div className="flex flex-col w-full gap-2 p-4 font-bold text-white lg:p-10 md:flex-row right">
+        <div className="flex flex-col gap-2 lg:p-6 lg:w-1/3 ">
           <h3>Page Links</h3>
           <AnchorLink className="font-thin text-stone-100" href="#home">
             Home
@@ -78,7 +70,7 @@ const Footer = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="flex flex-col gap-2 p-6 lg:w-1/3">
+        <div className="flex flex-col gap-2 lg:p-6 lg:w-1/3">
           <h3>Pages</h3>
           <AnchorLink href="#home">
             <button className="font-thin text-stone-100">Home</button>
@@ -93,8 +85,26 @@ const Footer = () => {
             Connect with me
           </a>
         </div>
-        <div className="w-1/3 p-6">
+        <div className="flex flex-col gap-2 lg:w-1/3 lg:p-6">
           <h3>Contacts</h3>
+          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-300 links">
+            <i class="fa-regular fa-envelope"></i>
+            <p>robinthelevi@gmail.com</p>
+          </div>
+
+          <div className="flex items-center gap-1 font-normal text-[14px] text-stone-300 links">
+            <i class="fa-solid fa-phone"></i>
+            <p>Ask through mail</p>
+          </div>
+
+          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-300 links">
+            <i class="fa-brands fa-x-twitter"></i>
+            <p>@enesthedad</p>
+          </div>
+          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-300 links">
+            <i class="fa-brands fa-github"></i>
+            <p>@enesthedad</p>
+          </div>
         </div>
       </div>
     </div>

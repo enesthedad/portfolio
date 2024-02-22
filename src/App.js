@@ -17,7 +17,7 @@ function App() {
     <div className="overflow-hidden overscroll-none">
       {navOpen ? (
         <>
-          <div className="h-screen">
+          <div className="min-h-screen">
             <Navbar handleClick={handleClick} navOpen={navOpen} />
             <Greeter />
           </div>

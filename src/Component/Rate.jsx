@@ -11,7 +11,9 @@ const Rate = (props) => {
       <div
         style={{ background: color }}
         className={
-          size === "lg" ? `w-4 h-4 rounded-full` : `w-3 h-3 rounded-full`
+          size === "lg"
+            ? `lg:w-4 lg:h-4 md:h-2 md:w-2 h-[5px] w-[5px] rounded-full`
+            : `w-3 h-3 rounded-full`
         }
       ></div>
     );
