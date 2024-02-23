@@ -1,11 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo from "./Logo";
-import twitterIcon from "../Imgs/twitter.png";
-import githubIcon from "../Imgs/github-svgrepo-com.svg";
-import devIcon from "../Imgs/dev-to-svgrepo-com.svg";
-import mediumIcon from "../Imgs/medium-svgrepo-com.svg";
-import MobileNav from "./MobileNav";
 const Navbar = ({ handleClick, navOpen }) => {
   return (
     <div className="relative z-40 w-full shadow-md " id="home">
@@ -19,11 +14,11 @@ const Navbar = ({ handleClick, navOpen }) => {
         <Logo />
         {/* FOR SMALL SCREENS */}
         <div className="text-white lg:hidden  text-[24px]">
-          <a href="" onClick={handleClick}>
+          <a href="/" onClick={handleClick}>
             {navOpen ? (
-              <i class="fa-solid fa-x"></i>
+              <i className="fa-solid fa-x"></i>
             ) : (
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             )}
           </a>
         </div>
@@ -74,24 +69,24 @@ const Navbar = ({ handleClick, navOpen }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-github   transition-all ease-in-out"></i>
+            <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-github"></i>
           </a>
           <a
             href="https://twitter.com/enesthedad"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-square-x-twitter  transition-all ease-in-out"></i>
+            <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-square-x-twitter"></i>
           </a>
           <a
             href="https://medium.com/@robinthelevi"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-medium   transition-all ease-in-out"></i>
+            <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-medium"></i>
           </a>
           <a href="https://dev.to/enesthedad" target="_blank" rel="noreferrer">
-            <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-dev   transition-all ease-in-out"></i>
+            <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-dev"></i>
           </a>
         </div>
       </div>

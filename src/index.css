@@ -34,3 +34,24 @@ body {
 .contact-list {
   box-shadow: -5px 10px #879994;
 }
+
+.page-404 {
+  background: rgb(201, 223, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 223, 226, 1) 0%,
+    rgba(240, 255, 240, 1) 25%,
+    rgba(227, 215, 228, 1) 50%,
+    rgba(247, 249, 231, 1) 75%,
+    rgba(208, 221, 218, 1) 100%
+  );
+}
+.gradient-bg {
+  background: rgb(136, 184, 162);
+  background: linear-gradient(
+    93deg,
+    rgba(136, 184, 162, 1) 0%,
+    rgba(83, 140, 159, 1) 50%,
+    rgba(92, 110, 157, 1) 100%
+  );
+}

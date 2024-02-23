@@ -18,37 +18,37 @@ const Footer = () => {
         <div className="flex gap-2 links text-[16px] ">
           <a
             href=""
-            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:text-emerald-500 hover:scale-125 bg-stone-600"
+            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
             <i class="fa-brands fa-square-github"></i>
           </a>
           <a
             href=""
-            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:text-emerald-500 hover:scale-125 bg-stone-600"
+            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
           <a
             href=""
-            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:text-emerald-500 hover:scale-125 bg-stone-600"
+            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
             <i class="fa-brands fa-x-twitter"></i>
           </a>
           <a
             href=""
-            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:text-emerald-500 hover:scale-125 bg-stone-600"
+            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
             <i class="fa-solid fa-envelope"></i>
           </a>
           <a
             href=""
-            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:text-emerald-500 hover:scale-125 bg-stone-600"
+            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
             <i class="fa-brands fa-dev"></i>
           </a>
           <a
             href=""
-            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:text-emerald-500 hover:scale-125 bg-stone-600"
+            className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
             <i class="fa-brands fa-medium"></i>
           </a>
@@ -57,51 +57,68 @@ const Footer = () => {
       <div className="flex flex-col w-full gap-2 p-4 font-bold text-white lg:p-10 md:flex-row right">
         <div className="flex flex-col gap-2 lg:p-6 lg:w-1/3 ">
           <h3>Page Links</h3>
-          <AnchorLink className="font-thin text-stone-100" href="#home">
+          <AnchorLink
+            className="font-light text-stone-400 hover:text-[#CFF8E6]"
+            href="#home"
+          >
             Home
           </AnchorLink>
-          <AnchorLink className="font-thin text-stone-100" href="#about">
+          <AnchorLink
+            className="font-light text-stone-400 hover:text-[#CFF8E6]"
+            href="#about"
+          >
             About me
           </AnchorLink>
-          <AnchorLink className="font-thin text-stone-100" href="#projects">
+          <AnchorLink
+            className="font-light text-stone-400 hover:text-[#CFF8E6]"
+            href="#projects"
+          >
             Projects
           </AnchorLink>
-          <AnchorLink className="font-thin text-stone-100" href="#connect">
+          <AnchorLink
+            className="font-light text-stone-400 hover:text-[#CFF8E6]"
+            href="#connect"
+          >
             Connect with me
           </AnchorLink>
         </div>
         <div className="flex flex-col gap-2 lg:p-6 lg:w-1/3">
           <h3>Pages</h3>
           <AnchorLink href="#home">
-            <button className="font-thin text-stone-100">Home</button>
+            <button className="font-light text-stone-400 hover:text-[#CFF8E6]">
+              Home
+            </button>
           </AnchorLink>
-          <a className="font-thin text-stone-100" href="#about-me">
+          <a
+            className="font-light text-stone-400 hover:text-[#CFF8E6]"
+            href="#about-me"
+          >
             Blog
           </a>
-          <a className="font-thin text-stone-100" href="#projects">
+          <a
+            className="font-light text-stone-400 hover:text-[#CFF8E6]"
+            href="#projects"
+          >
             Resume
-          </a>
-          <a className="font-thin text-stone-100" href="#connect">
-            Connect with me
           </a>
         </div>
         <div className="flex flex-col gap-2 lg:w-1/3 lg:p-6">
           <h3>Contacts</h3>
-          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-300 links">
+          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links">
             <i class="fa-regular fa-envelope"></i>
             <p>robinthelevi@gmail.com</p>
           </div>
 
-          <div className="flex items-center gap-1 font-normal text-[14px] text-stone-300 links">
+          <div className="flex items-center gap-1 font-normal text-[14px] text-stone-400 links">
             <i class="fa-solid fa-phone"></i>
             <p>Ask through mail</p>
           </div>
 
-          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-300 links">
+          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links">
             <i class="fa-brands fa-x-twitter"></i>
             <p>@enesthedad</p>
           </div>
-          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-300 links">
+          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links">
             <i class="fa-brands fa-github"></i>
             <p>@enesthedad</p>
           </div>
