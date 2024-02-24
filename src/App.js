@@ -14,10 +14,12 @@ function App() {
   };
 
   return (
-    <div className="overflow-hidden overscroll-none">
+    <div
+      className={navOpen ? `overflow-hidden  overscroll-none` : `min-h-screen`}
+    >
       {navOpen ? (
         <>
-          <div className="min-h-screen">
+          <div className="h-screen">
             <Navbar handleClick={handleClick} navOpen={navOpen} />
             <Greeter />
           </div>

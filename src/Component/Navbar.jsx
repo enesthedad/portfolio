@@ -8,13 +8,18 @@ const Navbar = ({ handleClick, navOpen }) => {
         className={
           navOpen
             ? `fixed top-0 z-40 flex justify-between w-full px-10 py-6 bg-stone-900 `
-            : `relative top-0 z-40 flex justify-between w-full px-10 py-6 bg-stone-900 `
+            : `absolute top-0 z-40 flex justify-between w-full px-10 py-6 bg-stone-900 `
         }
       >
         <Logo />
         {/* FOR SMALL SCREENS */}
-        <div className="text-white lg:hidden  text-[24px]">
-          <a href="/" onClick={handleClick}>
+
+        <div className="text-white lg:hidden absolute right-10  text-[24px]">
+          <a
+            href="/"
+            onClick={handleClick}
+            className="transition-transform duration-500 ease-in-out"
+          >
             {navOpen ? (
               <i className="fa-solid fa-x"></i>
             ) : (
@@ -22,7 +27,7 @@ const Navbar = ({ handleClick, navOpen }) => {
             )}
           </a>
         </div>
-        <div className="hidden lg:social-links lg:w-1/3 lg:text-[28px]  lg:flex lg:gap-3 lg:justify-center text-zinc-300 "></div>
+        <div className="hidden lg:social-links lg:w-1/3 lg:text-[24px]  lg:flex lg:gap-3 lg:justify-center text-zinc-300 "></div>
         <div className="items-center justify-center hidden w-1/3 gap-3 font-semibold lg:flex navigation text-stone-600">
           <AnchorLink href="#home" className="text-white ">
             <button>Home</button>
@@ -44,11 +49,11 @@ const Navbar = ({ handleClick, navOpen }) => {
       <div
         className={
           navOpen
-            ? `fixed top-0 z-0 pt-40 pl-12 right-0 h-screen duration-300 w-1/2 transition-all ease-in-out  bg-black`
-            : `translate-x-[-100%] opacity-0 h-0  duration-300 transition-all ease-in-out`
+            ? `fixed top-0 z-0 pt-40 pl-12 flex flex-col gap-4 right-0 h-screen duration-300 w-1/2 md:w-1/3 transition-transform ease-in-out  bg-black`
+            : `translate-x-[-100%] opacity-0 h-0  duration-300 transition-opacity ease-in-out`
         }
       >
-        <div className=" flex flex-col gap-3 text-[18px] font-semibold text-white upper-links">
+        <div className=" flex flex-col gap-4 text-[12px] md:text-[17px] font-semibold text-white upper-links">
           <AnchorLink href="#about" onClick={handleClick}>
             <button className="hover:text[#CFF8E6]">Home</button>
           </AnchorLink>
@@ -91,10 +96,11 @@ const Navbar = ({ handleClick, navOpen }) => {
         </div>
       </div>
       <div
+        onClick={handleClick}
         className={
           navOpen
-            ? `fixed top-0 z-0 left-0 h-screen duration-300 w-1/2 transition-all ease-in-out  bg-black opacity-50`
-            : `translate-x-[-100%] opacity-0  duration-300 transition-all ease-in-out`
+            ? `fixed top-0 z-0 left-0 h-screen duration-300 w-1/2 md:w-2/3 transition-transform ease-in-out  bg-black opacity-50`
+            : `translate-x-[-100%] opacity-0  duration-300 transition-transform ease-in-out`
         }
       ></div>
     </div>

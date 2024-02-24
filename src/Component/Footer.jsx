@@ -15,7 +15,7 @@ const Footer = () => {
           online presence and create some amazing digital experiences? Let’s
           make something great together!
         </p>
-        <div className="flex gap-2 links text-[16px] ">
+        <div className="flex gap-2 links text-[16px] flex-wrap">
           <a
             href=""
             className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
@@ -54,8 +54,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-2 p-4 font-bold text-white lg:p-10 md:flex-row right">
-        <div className="flex flex-col gap-2 lg:p-6 lg:w-1/3 ">
+      <div className="grid w-full grid-cols-1 gap-2 p-4 font-bold text-white md:grid-cols-2 lg:grid-cols-3 lg:p-10 md:flex-row right">
+        <div className="flex flex-col gap-2 lg:p-6">
           <h3>Page Links</h3>
           <AnchorLink
             className="font-light text-stone-400 hover:text-[#CFF8E6]"
@@ -82,7 +82,7 @@ const Footer = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="flex flex-col gap-2 lg:p-6 lg:w-1/3">
+        <div className="flex flex-col gap-2 lg:p-6">
           <h3>Pages</h3>
           <AnchorLink href="#home">
             <button className="font-light text-stone-400 hover:text-[#CFF8E6]">
@@ -102,7 +102,7 @@ const Footer = () => {
             Resume
           </a>
         </div>
-        <div className="flex flex-col gap-2 lg:w-1/3 lg:p-6">
+        <div className="flex flex-col gap-2 lg:p-6">
           <h3>Contacts</h3>
           <div className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links">
             <i class="fa-regular fa-envelope"></i>
