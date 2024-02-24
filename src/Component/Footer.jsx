@@ -17,40 +17,52 @@ const Footer = () => {
         </p>
         <div className="flex gap-2 links text-[16px] flex-wrap">
           <a
-            href=""
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/enesthedad"
             className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
-            <i class="fa-brands fa-square-github"></i>
+            <i className="fa-brands fa-square-github"></i>
           </a>
           <a
-            href=""
+            target="_blank"
+            rel="noreferrer"
+            href="/"
             className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
           <a
-            href=""
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/enesthedad"
             className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
-            <i class="fa-brands fa-x-twitter"></i>
+            <i className="fa-brands fa-x-twitter"></i>
           </a>
           <a
-            href=""
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:robinthelevi@gmail.com"
             className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
           </a>
           <a
-            href=""
+            target="_blank"
+            rel="noreferrer"
+            href="https://dev.to/enesthedad"
             className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
-            <i class="fa-brands fa-dev"></i>
+            <i className="fa-brands fa-dev"></i>
           </a>
           <a
-            href=""
+            target="_blank"
+            rel="noreferrer"
+            href="https://enesthedad.medium.com/"
             className="flex items-center justify-center w-8 h-8 p-5 text-white transition-all rounded-full hover:bg-[#CFF8E6] hover:text-stone-700 bg-stone-600"
           >
-            <i class="fa-brands fa-medium"></i>
+            <i className="fa-brands fa-medium"></i>
           </a>
         </div>
       </div>
@@ -105,23 +117,33 @@ const Footer = () => {
         <div className="flex flex-col gap-2 lg:p-6">
           <h3>Contacts</h3>
           <div className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links">
-            <i class="fa-regular fa-envelope"></i>
+            <i className="fa-regular fa-envelope"></i>
             <p>robinthelevi@gmail.com</p>
           </div>
 
           <div className="flex items-center gap-1 font-normal text-[14px] text-stone-400 links">
-            <i class="fa-solid fa-phone"></i>
+            <i className="fa-solid fa-phone"></i>
             <p>Ask through mail</p>
           </div>
 
-          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links">
-            <i class="fa-brands fa-x-twitter"></i>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/enesthedad"
+            className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links"
+          >
+            <i className="fa-brands fa-x-twitter"></i>
             <p>@enesthedad</p>
-          </div>
-          <div className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links">
-            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/enesthedad"
+            className="flex items-center gap-2 font-normal text-[14px] text-stone-400 links"
+          >
+            <i className="fa-brands fa-github"></i>
             <p>@enesthedad</p>
-          </div>
+          </a>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "../Component/Logo";
 import ResumeHeader from "../Component/Resume/ResumeHeader";
 import ResumeAvatar from "../Component/Resume/ResumeAvatar";
 import ResumeAbout from "../Component/Resume/ResumeAbout";
@@ -14,7 +13,6 @@ const Resume = () => {
   const skills = data[2].skills;
   const languages = data[3].languages;
   const projects = data[4].projects;
-  console.log(skills.skills);
   return (
     <div className="flex items-center justify-center gap-2">
       <div className="flex flex-col w-full gap-2 bg-white 2xl:max-w-4xl xl:max-w-2xl md:max-w-xl md:py-8 lg:max-w-3xl lg:py-16">
@@ -34,8 +32,8 @@ const Resume = () => {
           selector="education"
         />
         <div className="flex gap-4 py-2">
-          {skills.map((el) => (
-            <Skill item={el} />
+          {skills.map((el, index) => (
+            <Skill item={el} key={index} />
           ))}{" "}
         </div>
         <Projects data={projects} />

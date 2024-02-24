@@ -4,15 +4,15 @@ const Rate = (props) => {
   const size = props.size;
   const color = props.bg;
   const times = Number(props.times);
-  console.log(times);
   let divs = [];
   for (let index = 0; index < times; index++) {
     divs.push(
       <div
+        key={index}
         style={{ background: color }}
         className={
           size === "lg"
-            ? `lg:w-4 lg:h-4 md:h-2 md:w-2 h-[5px] w-[5px] rounded-full`
+            ? `lg:w-3 lg:h-3 md:h-2 md:w-2 h-[7px] w-[7px] rounded-full`
             : `w-3 h-3 rounded-full`
         }
       ></div>

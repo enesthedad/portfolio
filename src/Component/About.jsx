@@ -22,7 +22,7 @@ const About = () => {
           <p>ABOUT ME</p>
         </div>
         <div className="col-span-2 mb-4 shadow-md  md:m-0 about-me flex justify-center items-center row-span-2 bg-[#F7F7F7] p-3 lg:p-10 md:p-4 rounded-2xl">
-          <p className="2xl:text-[18px] xl:text-[16px] lg:text-[14px] md:text-[14px] font-light tracking-wider">
+          <p className="2xl:text-[18px] xl:text-[15px] lg:text-[14px] md:text-[13px] font-light tracking-wider">
             A full-stack developer with a passion for creating dynamic and
             user-friendly websites.Originally an automation engineer. My skill
             set includes Html, Css,Tailwind, Javascript, React.js, Node.js,
@@ -43,31 +43,47 @@ const About = () => {
             Social links
           </h3>
           <div className="flex gap-5 text-[20px] items-center justify-center  md:text-[25px] text-[#606261]">
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/enesthedad"
+            >
               <i className="fa-brands hover:text-[#B1DCC9] fa-github"></i>
             </a>
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://twitter.com/enesthedad"
+            >
               <i className="fa-brands hover:text-[#B1DCC9] fa-square-x-twitter"></i>
             </a>
-            <a href="">
+            <a target="_blank" rel="noreferrer" href="/">
               <i className="fa-brands hover:text-[#B1DCC9] fa-linkedin"></i>
             </a>
           </div>
           <div className="flex gap-5  md:text-[25px] items-center justify-center  text-[20px]  text-[#606261]">
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://dev.to/enesthedad"
+            >
               <i className="fa-brands hover:text-[#B1DCC9] fa-dev "></i>
             </a>
-            <a href="">
+            <a href="https://enesthedad.medium.com/">
               <i className="fa-brands hover:text-[#B1DCC9] fa-medium"></i>
             </a>
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.upwork.com/freelancers/~01860b70312db13c3f"
+            >
               <i className="fa-brands hover:text-[#B1DCC9] fa-upwork"></i>
             </a>
           </div>
         </div>
         <div className="col-span-2 my-5 md:m-0 shadow-md about-me flex gap-6 justify-center items-center flex-col col-start-4 row-span-3 row-start-1 bg-[#F7F7F7] lg:p-10 p-5 rounded-2xl">
           <div className="flex flex-col items-center gap-2">
-            <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 md:grid-cols-2">
+            <div className="flex flex-wrap justify-center w-full text-[14px] gap-4 lg:grid-cols-3 md:grid-cols-2">
               <div className="flex flex-col  shadow-md gap-1 p-3 md:p-2 rounded-lg bg-[#eaeaea]">
                 <p>English</p>
                 <div className="flex gap-1">
@@ -129,7 +145,7 @@ const About = () => {
             className="text-[16px] lg:text-[16px] flex gap-2 shadow-md  md:text-[12px] md:p-1  px-2 py-1 bg-[#FDFDE3] rounded-lg text-stone-700"
           >
             <p>
-              <i class="fa-solid fa-file"></i>
+              <i className="fa-solid fa-file"></i>
             </p>
             See my resume
           </a>
@@ -144,7 +160,7 @@ const About = () => {
           >
             <button>
               <p>
-                <i class="fa-solid fa-face-smile"></i>
+                <i className="fa-solid fa-face-smile"></i>
               </p>
             </button>
             See my projects
@@ -159,7 +175,7 @@ const About = () => {
             className="text-[16px] lg:text-[16px] flex gap-2 shadow-md  md:p-1 md:text-[12px]  px-2 py-1 bg-[#CCD0FF] rounded-lg text-stone-700"
           >
             <p>
-              <i class="fa-solid fa-pencil"></i>
+              <i className="fa-solid fa-pencil"></i>
             </p>
             See my Blog
           </a>

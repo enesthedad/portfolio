@@ -15,8 +15,8 @@ const ResumeHeader = ({ data }) => {
         Aspired Fullstack developer & full time learner.
       </p>
       <p className="flex justify-between text-gray-600">
-        {data.map((el) => (
-          <Language data={el} />
+        {data.map((el, index) => (
+          <Language key={index} data={el} />
         ))}
       </p>{" "}
       <p className="flex items-center gap-2 italic tracking-wider text-gray-400 font-lighter">
@@ -24,22 +24,22 @@ const ResumeHeader = ({ data }) => {
         Ankara, Turkey
       </p>
       <div className="flex gap-2 links">
-        <a href="">
+        <a href="https://github.com/enesthedad">
           <div className="p-1 hover:bg-gray-300 w-max rounded-lg border-[1px] border-stone-700">
             <img src={githubIcon} className="h-6" alt="" />
           </div>
         </a>
-        <a href="">
+        <a href="/">
           <div className="p-1 hover:bg-gray-300 w-max rounded-lg border-[1px] border-stone-700">
             <img src={linkedInIcon} className="h-6" alt="" />
           </div>
         </a>
-        <a href="">
+        <a href="https://twitter.com/enesthedad">
           <div className="p-1 hover:bg-gray-300 w-max rounded-lg border-[1px] border-stone-700">
             <img src={twitterIcon} className="h-6" alt="" />
           </div>
         </a>
-        <a href="">
+        <a href="mailto:robinthelevi@gmail.com">
           <div className="p-1 hover:bg-gray-300 w-max rounded-lg border-[1px] border-stone-700">
             <img src={mailIcon} className="h-6" alt="" />
           </div>

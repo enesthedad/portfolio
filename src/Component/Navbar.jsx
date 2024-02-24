@@ -28,7 +28,7 @@ const Navbar = ({ handleClick, navOpen }) => {
           </a>
         </div>
         <div className="hidden lg:social-links lg:w-1/3 lg:text-[24px]  lg:flex lg:gap-3 lg:justify-center text-zinc-300 "></div>
-        <div className="items-center justify-center hidden w-1/3 gap-3 font-semibold lg:flex navigation text-stone-600">
+        <div className="items-center justify-center hidden w-1/3 gap-3 font-semibold lg:flex navigation lg:text-[14px] text-stone-600">
           <AnchorLink href="#home" className="text-white ">
             <button>Home</button>
           </AnchorLink>
@@ -40,7 +40,7 @@ const Navbar = ({ handleClick, navOpen }) => {
           </AnchorLink>
           <AnchorLink
             href="#connect"
-            className="px-2 py-1  transition-all ease-in-out rounded-md bg-[#F28500] text-stone-700 hover:bg-white hover:text-emerald-500"
+            className="px-2 py-1   transition-all ease-in-out rounded-md bg-[#DBCDF0] text-stone-700 hover:bg-white hover:text-emerald-500"
           >
             <button>Connect Me</button>
           </AnchorLink>
@@ -49,7 +49,7 @@ const Navbar = ({ handleClick, navOpen }) => {
       <div
         className={
           navOpen
-            ? `fixed top-0 z-0 pt-40 pl-12 flex flex-col gap-4 right-0 h-screen duration-300 w-1/2 md:w-1/3 transition-transform ease-in-out  bg-black`
+            ? `fixed top-0 z-0 pl-4 flex flex-col justify-center gap-4 right-0 h-screen duration-300 w-1/2 md:w-1/3 transition-transform ease-in-out  bg-black`
             : `translate-x-[-100%] opacity-0 h-0  duration-300 transition-opacity ease-in-out`
         }
       >

@@ -3,6 +3,7 @@ import img1 from "../Imgs/paper_plane_flying-2.svg";
 import img2 from "../Imgs/nature_world-1.svg";
 import img3 from "../Imgs/science_atom_w3zLXnr.svg";
 import img4 from "../Imgs/nature_space_planet-1_i28qwXR.svg";
+import avatar from "../Imgs/hello.png";
 const Greeter = () => {
   return (
     <div className="top-0 z-0 flex  lg:px-[100px] w-full min-h-full justify-center lg:items-end lg:pb-10 md:items-end md:pb-20 items-center bg-[#EBEBEB]">
@@ -40,56 +41,61 @@ const Greeter = () => {
 
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-2">
-              <p className="text-[#808285] w-4/5 text-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[14px]">
+              <p className="text-stone-500 w-4/5 text-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[14px]">
                 i design and develop fullstack apps to turn your dreams into
                 reality
               </p>
 
               <a
                 href="mailto: robinthelevi@gmail.com"
-                className="self-center px-4 py-2 font-bold text-stone-800 rounded-lg shadow-md bg-[#F28500] shadow-stone-600"
+                className="self-center px-4 py-2 font-bold text-stone-700 rounded-lg shadow-md bg-[#DBCDF0] shadow-stone-600"
               >
                 get in touch
               </a>
             </div>
-            <div className="lg:flex hidden text-[36px] md:hidden flex-col">
-              <div className="w-[375px] h-[2px] bg-[#A1A1A1] shadow-md shadow-stone-700"></div>
-              <div className="flex gap-4 justify-center links text-[#A1A1A1]">
+            <div className="lg:flex hidden text-[24px] md:hidden flex-col">
+              <div className="flex border-[2px] border-stone-400 py-2 px-4 rounded-full  justify-center gap-4 text-stone-500 links">
                 <a
                   href="https://github.com/enesthedad"
                   className="divide-x-2"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-github   transition-all ease-in-out"></i>
+                  <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-github"></i>
                 </a>
                 <a
                   href="https://twitter.com/enesthedad"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-square-x-twitter  transition-all ease-in-out"></i>
+                  <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-square-x-twitter"></i>
                 </a>
                 <a
                   href="https://medium.com/@robinthelevi"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-medium   transition-all ease-in-out"></i>
+                  <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-medium"></i>
                 </a>
                 <a
                   href="https://dev.to/enesthedad"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="hover:text-emerald-500 hover:scale-125 fa-brands fa-dev   transition-all ease-in-out"></i>
+                  <i className="transition-all ease-in-out hover:text-emerald-500 hover:scale-125 fa-brands fa-dev"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="items-center justify-center hidden w-1/2 h-full bg-[#EBEBEB] lg:flex"></div>
+      <div className="items-center justify-center hidden w-1/2 h-full bg-[#ebebeb] lg:flex">
+        <img
+          src={avatar}
+          className="h-[350px] rounded-[35%] bg-stone-700 mb-[100px]"
+          alt=""
+        />
+      </div>
     </div>
   );
 };

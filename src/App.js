@@ -3,9 +3,8 @@ import Contact from "./Component/Contact";
 import Footer from "./Component/Footer";
 import Greeter from "./Component/Greeter";
 import Navbar from "./Component/Navbar";
-import OpenedNavbar from "./Component/OpenedNavbar";
 import Projects from "./Component/Projects";
-import { useRef, useState } from "react";
+import { useState } from "react";
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   const handleClick = (e) => {

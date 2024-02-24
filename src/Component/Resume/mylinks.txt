@@ -1,0 +1,11 @@
+github  href="https://github.com/enesthedad"
+              className="divide-x-2"
+              target="_blank"
+              rel="noreferrer"
+twtitter https://twitter.com/enesthedad
+dev
+
+medium https://medium.com/@robinthelevi
+upwork
+contra
+fiverr
