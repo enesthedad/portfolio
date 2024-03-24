@@ -1,7 +1,7 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import laptopAvatar from "../Imgs/laptopAvatar.png";
-import helloAvatar from "../Imgs/hiAvatar.png";
+import laptopAvatar from "../Imgs/laptopAvatar.webp";
+import helloAvatar from "../Imgs/hiAvatar.webp";
 import rickandmorty from "../Imgs/can_do.gif";
 import "./AboutMe.css";
 import Slider from "./Slider";
@@ -16,7 +16,7 @@ const About = () => {
         <div className="rounded-2xl text-gray-600 flex mb-4 md:m-0 col-start-2 col-span-2 row-start-5 md:flex gap-4 shadow-md justify-center items-center bg-[#F7F7F7] p-4 font-bold text-[24px] lg:text-[40px] md:text-[36px]">
           <img
             src={laptopAvatar}
-            alt=""
+            alt="laptop-avatar"
             className="overflow-hidden bg-[#ebebeb] rounded-full h-16"
           />
           <p>ABOUT ME</p>
@@ -34,7 +34,7 @@ const About = () => {
         <div className="md:flex md:w-full h-auto md:h-full inline  shadow-md items-center md:justify-center md:items-center lg:justify-center lg:items-center justify-center col-start-3 row-span-2 bg-[#f7f7f7] overflow-hidden rounded-2xl">
           <img
             src={helloAvatar}
-            alt=""
+            alt="hello-avatar"
             className="h-[100px] absolute md:relative md:h-full object-cover right-10 md:right-0 md:scale-110  lg:scale-100 "
           />
         </div>
@@ -122,17 +122,17 @@ const About = () => {
             </div>
           </div>
 
-          <p className="text-[16px] tracking-wider md:text-[14px]  font-light">
+          <h5 className="text-[16px] tracking-wider md:text-[14px]  font-light">
             If you're looking to build, design and optimize a website or app,
             i'm here to help. Let's create something amazing and exciting
             together ✌🏻
-          </p>
+          </h5>
         </div>
         <Slider />
         <div className="col-start-4 my-4 md:m-0 shadow-md row-span-2 overflow-hidden  row-start-4 flex justify-center items-center bg-[#f7f7f7]  rounded-2xl">
           <img
             src={rickandmorty}
-            alt=""
+            alt="rick-and-morty"
             className="object-cover h-full rounded-2xl"
           />
         </div>
@@ -142,7 +142,7 @@ const About = () => {
           </div>
           <a
             href="/resume"
-            className="text-[16px] lg:text-[16px] flex gap-2 shadow-md  md:text-[12px] md:p-1  px-2 py-1 bg-[#FDFDE3] rounded-lg text-stone-700"
+            className="text-[16px] xl:text-[16px] lg:text-[14px] flex gap-2 shadow-md  md:text-[12px] md:p-1  px-2 py-1 bg-[#FDFDE3] rounded-lg text-stone-700"
           >
             <p>
               <i className="fa-solid fa-file"></i>
@@ -156,9 +156,9 @@ const About = () => {
           </div>
           <AnchorLink
             href="#projects"
-            className="text-[16px] lg:text-[16px] flex gap-2 shadow-md  md:text-[10px] md:p-1  px-2 py-1  bg-[#CFF8E6] rounded-lg text-stone-700"
+            className="text-[16px] xl:text-[16px] lg:text-[14px] flex gap-2 shadow-md  md:text-[10px] md:p-1  px-2 py-1  bg-[#CFF8E6] rounded-lg text-stone-700"
           >
-            <button>
+            <button aria-label="see my projects">
               <p>
                 <i className="fa-solid fa-face-smile"></i>
               </p>
@@ -172,7 +172,7 @@ const About = () => {
           </div>
           <a
             href="/blog"
-            className="text-[16px] lg:text-[16px] flex gap-2 shadow-md  md:p-1 md:text-[12px]  px-2 py-1 bg-[#CCD0FF] rounded-lg text-stone-700"
+            className="text-[16px] xl:text-[16px] lg:text-[14px] flex gap-2 shadow-md  md:p-1 md:text-[12px]  px-2 py-1 bg-[#CCD0FF] rounded-lg text-stone-700"
           >
             <p>
               <i className="fa-solid fa-pencil"></i>

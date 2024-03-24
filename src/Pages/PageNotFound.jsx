@@ -1,7 +1,11 @@
 import React from "react";
 import errGif from "../Imgs/404.gif";
 import Logo from "../Component/Logo";
+import { useEffect } from "react";
 const PageNotFound = () => {
+  useEffect(() => {
+    document.title = "Enes Soyturk | Full Stack Developer & Web Designer";
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center w-full gap-[16px] min-h-screen p-4 page-404">
       <div className="absolute top-0 flex items-center justify-center w-full p-5 lg:p-6 md:p-4 bg-stone-800">
@@ -9,7 +13,7 @@ const PageNotFound = () => {
       </div>
       <img
         src={errGif}
-        alt=""
+        alt="error-gif"
         className=" scale-[60%] lg:scale-[70%] md:scale-[60%] mb-[-48px]"
       />
       <h2 className="lg:text-[38px] text-stone-700 md:text-[48px] text-[36px] font-bold tracking-wider">

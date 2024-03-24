@@ -2,6 +2,12 @@ export const data = [
   {
     working: [
       {
+        title: "Jr Frontend Developer",
+        explain:
+          "Create website based on Figma file and load page based on info about product from backend",
+        time: "2019-2021",
+      },
+      {
         title: "Automation Engineer",
         explain: "Code, review and update controllers of NPP",
         time: "2021-2024",
@@ -25,16 +31,7 @@ export const data = [
   {
     skills: [
       {
-        title: "Html",
-      },
-      {
-        title: "Css",
-      },
-      {
         title: "Javascript",
-      },
-      {
-        title: "Tailwind",
       },
       {
         title: "React",
@@ -45,9 +42,24 @@ export const data = [
       {
         title: "MongoDb",
       },
+      {
+        title: "Html",
+      },
+      {
+        title: "Css",
+      },
+      {
+        title: "Typescript",
+      },
+      {
+        title: "Tailwind",
+      },
 
       {
-        title: "express",
+        title: "express.js",
+      },
+      {
+        title: "Responsive Web Design",
       },
     ],
   },
@@ -82,38 +94,50 @@ export const data = [
         title: "portfolio",
         description: "Personal website with responsive design and UI",
         tags: ["ui", "tailwind", "react", "css", "html"],
+        href: "https://enesthedad.netlify.app/",
       },
       {
-        title: "yummy-app",
-        description:
-          "fullstack website for sharing delicious recipes and tables",
+        title: "wine-shop",
+        description: "responsive and user friendly web site for delicious wine",
+        tags: ["ui", "tailwind", "react", "css", "html", "side project"],
+        href: "https://suryani-sarap-evi.netlify.app/",
+      },
+      {
+        title: "popcorn",
+        description: "Personal website with responsive design and ui",
+        tags: ["ui", "tailwind", "react", "css", "html", "side project"],
+        href: "https://grap-popcorn.netlify.app/",
+      },
+      {
+        title: "Weather App",
+        description: "Personal website with responsive design and ui",
         tags: [
           "ui",
           "tailwind",
           "react",
           "css",
           "html",
+          "vite",
+          "API",
+          "responsive",
+        ],
+        href: "https://enes-weather.netlify.app/",
+      },
+      {
+        title: "Personal Blog",
+        description: "Personal website with responsive design and ui",
+        tags: [
+          "wip",
+          "full-stack",
           "node.js",
-          "express.js",
-          "mongodb",
-
+          "ui",
+          "tailwind",
+          "react",
+          "css",
+          "html",
           "side project",
         ],
-      },
-      {
-        title: "popcorn",
-        description: "Personal website with responsive design and ui",
-        tags: ["ui", "tailwind", "react", "css", "html", "side project"],
-      },
-      {
-        title: "Hospital System",
-        description: "Personal website with responsive design and ui",
-        tags: ["ui", "tailwind", "react", "css", "html", "side project"],
-      },
-      {
-        title: "Wine Shop",
-        description: "Personal website with responsive design and ui",
-        tags: ["ui", "tailwind", "react", "css", "html"],
+        href: "https://github.com/enesthedad/mern-blog",
       },
     ],
   },

@@ -6,6 +6,7 @@ import Blog from "./Pages/Blog";
 import Resume from "./Pages/Resume";
 import PageNotFound from "./Pages/PageNotFound";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",

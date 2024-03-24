@@ -7,7 +7,7 @@ const Job = ({ data }) => {
         <h3 className="font-semibold text-[16px]">{data.title}</h3>
         <p className="font-light text-gray-600">{data.explain}</p>
       </div>
-      <div className="">{data.time}</div>
+      <div className=" w-fit">{data.time}</div>
     </div>
   );
 };

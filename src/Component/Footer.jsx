@@ -97,19 +97,22 @@ const Footer = () => {
         <div className="flex flex-col gap-2 lg:p-6">
           <h3>Pages</h3>
           <AnchorLink href="#home">
-            <button className="font-light text-stone-400 hover:text-[#CFF8E6]">
+            <button
+              aria-label="home"
+              className="font-light text-stone-400 hover:text-[#CFF8E6]"
+            >
               Home
             </button>
           </AnchorLink>
           <a
             className="font-light text-stone-400 hover:text-[#CFF8E6]"
-            href="#about-me"
+            href="/blog"
           >
             Blog
           </a>
           <a
             className="font-light text-stone-400 hover:text-[#CFF8E6]"
-            href="#projects"
+            href="/resume"
           >
             Resume
           </a>

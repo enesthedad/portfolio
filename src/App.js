@@ -4,8 +4,12 @@ import Footer from "./Component/Footer";
 import Greeter from "./Component/Greeter";
 import Navbar from "./Component/Navbar";
 import Projects from "./Component/Projects";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    document.title = "Enes Soyturk | Full Stack Developer & Web Designer";
+  }, []);
   const [navOpen, setNavOpen] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
@@ -13,13 +17,14 @@ function App() {
   };
 
   return (
-    <div
-      className={navOpen ? `overflow-hidden  overscroll-none` : `min-h-screen`}
-    >
+    <div className={`min-h-screen`}>
       {navOpen ? (
         <>
-          <div className="h-screen">
-            <Navbar handleClick={handleClick} navOpen={navOpen} />
+          <div className="top-0 min-h-screen ">
+            <div className="w-full">
+              <Navbar handleClick={handleClick} navOpen={navOpen} />
+            </div>
+
             <Greeter />
           </div>
           <About className="overflow-hidden" />
